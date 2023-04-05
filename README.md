@@ -9,10 +9,10 @@ Before you can start using this project, ensure that you have the following inst
 
 ## Installation
 
-1- Clone the repository to your local machine.
-2- Navigate to the project directory.
-3- Run npm install to install all the project dependencies.
-4- Run npm run dev to start the development server on port 3000.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run npm install to install all the project dependencies.
+4. Run npm run dev to start the development server on port 3000.
 
 ## Scripts
 
