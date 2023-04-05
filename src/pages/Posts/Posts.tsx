@@ -1,13 +1,22 @@
 import React from 'react'
 import { Outlet, useLoaderData } from 'react-router-dom'
-import { IPost } from '../../core/api/api'
+import PostComponent from '../../components/PostComponent/PostComponent'
+import { IPost } from '../../core/interface/IPost.interface'
 
 const Posts = () => {
   const data = useLoaderData() as IPost[]
-  console.log(data)
+
   return (
     <div>
-      Posts
+      {data.map((p, index) => (
+        <PostComponent
+          imgUrl={`https://picsum.photos/id/${index % 5}/100/100/`}
+          key={p.id}
+          title={p.title}
+          body={p.body}
+          id={p.id}
+        />
+      ))}
       <Outlet />
     </div>
   )

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="p-4">
+      <div className="h-[calc(100vh_-_65px)] overflow-auto p-4">
         <Outlet />
       </div>
     </>

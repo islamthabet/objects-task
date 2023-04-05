@@ -1,4 +1,4 @@
-import { LoaderFunction, Outlet, createBrowserRouter } from 'react-router-dom'
+import { LoaderFunction, createBrowserRouter } from 'react-router-dom'
 import Posts from '../../pages/Posts/Posts'
 import Post from '../../pages/Post/Post'
 import CreatePost from '../../pages/CreatePost/CreatePost'
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <Post />,
-        loader: getPost as any,
+        loader: getPost as LoaderFunction,
       },
     ],
   },
