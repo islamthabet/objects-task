@@ -14,6 +14,7 @@ export const getPost: LoaderFunction = async ({
     axiosInstance.get<IPost>(`posts/${params.id}`),
     axiosInstance.get<IComments[]>(`posts/${params.id}/comments`),
   ])
+  console.log(post)
   return { posts: post.data, comments: comments.data }
 }
 
